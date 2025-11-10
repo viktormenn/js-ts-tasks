@@ -4,6 +4,12 @@
  * @param {number} symbolsCount
  * @returns {string}
  */
+
 module.exports.backToFront = function backToFront(str, symbolsCount) {
-  throw new Error('Not implemented');
+  if (str.length >= symbolsCount) {
+    part = str.slice(str.length - symbolsCount, str.length);
+    return part + str + part;
+  } else {
+    return str;
+  }
 };

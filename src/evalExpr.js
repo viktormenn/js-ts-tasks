@@ -4,5 +4,8 @@
  * @returns {number}
  */
 module.exports.evalExpr = function evalExpr(k) {
-  throw new Error('Not implemented');
+  let res1 = 2 * k;
+  let res2 = res1 - 1;
+  let res3 = 4 * res2;
+  return res3;
 };

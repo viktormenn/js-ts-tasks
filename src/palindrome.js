@@ -14,6 +14,6 @@
  */
 module.exports.palindrome = function palindrome(TestUtils) {
   let cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, '');
-    return TestUtils.isPalindrome.apply({ str: cleaned });
+    return TestUtils.isPalindrome.apply({ str: cleaned }); 
   };
 

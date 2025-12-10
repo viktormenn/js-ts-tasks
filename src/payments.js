@@ -36,4 +36,4 @@ module.exports.payments = function payments(TestUtils) {
 
     return sumIncome - sumDebts;
   };
-};
+}; 

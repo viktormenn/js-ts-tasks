@@ -6,5 +6,14 @@
  * @return {function}
  */
 module.exports.debounce = function debounce(fn, delay) {
-  throw new Error('Not implemented'); // remove me and write your code
+  let lastCallTime = Date.now() - delay;
+
+  return function (...args) {
+    const now = Date.now();
+
+    if (now - lastCallTime >= delay) {
+      fn.apply(this, args);
+      lastCallTime = now;
+    }
+  };
 };

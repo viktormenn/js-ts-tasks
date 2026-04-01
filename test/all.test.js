@@ -1,10 +1,10 @@
 const chai = require('chai');
 const { inspect } = require('util');
-const chaiAsPromised = require('chai-as-promised');
+const cap = require('chai-as-promised');
 
 const { all } = require('../src/all');
 
-chai.use(chaiAsPromised);
+chai.use(cap.default || cap);
 
 const should = chai.should();
 const { expect } = chai;
